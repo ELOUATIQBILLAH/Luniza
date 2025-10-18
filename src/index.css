@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #003366;       /* bleu foncé */
+  --color-primary-dark: #001F4D;  /* bleu encore plus foncé */
+  --color-secondary: #FFD700;     /* doré */
+  --color-accent: #FFA500;        /* orange doré */
+  --color-bg: #F0F8FF;            /* bleu très clair */
+  --color-bg-secondary: #FFFFFF;  /* blanc */
+  --color-text: #003366;           /* texte bleu foncé */
+  --color-text-light: #666699;     /* texte clair bleu */
+  --color-border: #C0C0C0;        /* gris clair */
+  --color-success: #4CAF50;
+  --color-error: #F44336;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-bg-secondary);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-bg-secondary);
+  border-color: var(--color-secondary);
+}
+
+.error {
+  color: var(--color-error);
+  background-color: #ffe6e6;
+}
+
+.success {
+  color: var(--color-success);
+  background-color: #e6ffe6;
+}
